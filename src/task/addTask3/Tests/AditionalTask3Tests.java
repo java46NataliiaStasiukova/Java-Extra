@@ -14,12 +14,14 @@ class AditionalTask3Tests {
 		String string2 = "oLLeh";
 		String string3 = "Helo";
 		String string4 = new String("olleh");
-		String string5 = "Helo%7";
+		String string5 = "Hel%7";
+		String string6 = "7%leH";
 		assertTrue(AdditionalTask3.isAnagram(string1, string2));
 		assertFalse(AdditionalTask3.isAnagram(string1, string1));
 		assertFalse(AdditionalTask3.isAnagram(string1, string3));
 		assertTrue(AdditionalTask3.isAnagram(string1, string4));
 		assertFalse(AdditionalTask3.isAnagram(string1, string5));
+		assertFalse(AdditionalTask3.isAnagram(string5, string6));
 	}
 
 }
